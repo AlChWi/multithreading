@@ -22,16 +22,22 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jyy-rZ-ZjR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6gu-5s-Vbp">
+                        <rect key="frame" x="141.5" y="82.5" width="37" height="37"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Jyy-rZ-ZjR" secondAttribute="trailing" id="52F-Sg-4Uc"/>
                     <constraint firstItem="Jyy-rZ-ZjR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6zz-DZ-d0h"/>
                     <constraint firstItem="Jyy-rZ-ZjR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MPg-bS-ddK"/>
                     <constraint firstAttribute="bottom" secondItem="Jyy-rZ-ZjR" secondAttribute="bottom" constant="-0.5" id="Pbe-mB-ohp"/>
+                    <constraint firstItem="6gu-5s-Vbp" firstAttribute="centerY" secondItem="Jyy-rZ-ZjR" secondAttribute="centerY" id="QwS-cZ-U8Y"/>
+                    <constraint firstItem="6gu-5s-Vbp" firstAttribute="centerX" secondItem="Jyy-rZ-ZjR" secondAttribute="centerX" id="Y03-uf-dgf"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="photoActivityIndicator" destination="6gu-5s-Vbp" id="yWK-9A-oRk"/>
                 <outlet property="photoImageView" destination="Jyy-rZ-ZjR" id="a4H-ca-AaE"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="169.41964285714286"/>
